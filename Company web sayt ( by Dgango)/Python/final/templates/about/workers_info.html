@@ -1,0 +1,32 @@
+<div class="big-card">
+{%for i in info%}
+<br><br>
+<div class="card">
+  <div class="left-container">
+    <img src="{{i.picture.url}}" alt="Profile Image">
+  </div>
+  <div class="right-container">
+    <h3 class="gradienttext">About {{i.first_name}}</h3>
+    <table>
+        <tr>
+            <td>First name :</td>
+            <td>{{i.first_name}}</td>
+        </tr>
+        <tr>
+            <td>Last name :</td>
+            <td>{{i.last_name}}</td>
+        </tr>
+        <tr>
+            <td>Age :</td>
+            <td>{{i.age}}</td>
+        </tr>
+        <tr>
+            <td>Level: </td>
+            <td>{{ i.place }}</td>
+        </tr>
+    </table>
+</div>
+</div>
+<br><br>
+{%endfor%}
+</div>

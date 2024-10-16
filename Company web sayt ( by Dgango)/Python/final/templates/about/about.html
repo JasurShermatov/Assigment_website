@@ -1,0 +1,10 @@
+<main class="news-container">
+    {% for i in info %}
+    <article class="news-item">
+        <img src="{{i.picture.url}}" alt="Company Logo" class="news-image">
+        <h2 class="news-title">{{i.title}}</h2>
+        <p class="news-description">{{i.description}}</p>
+        <p class="news-date">Added Date: {{i.date}}</p>
+    </article>
+    {% endfor %}
+</main>

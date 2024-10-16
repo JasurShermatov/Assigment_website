@@ -1,0 +1,83 @@
+/* Umumiy uslublar */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigatsiya paneli uslublari */
+nav {
+    background-color: #004d40;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 10px 15px;
+}
+
+nav a:hover {
+    background-color: #00796b;
+    border-radius: 5px;
+}
+
+.logo {
+    width: 60px;
+    border-radius: 20px; 
+}
+
+/* Asosiy kontent maydoni */
+main {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Oyoq uslublari */
+footer {
+    background-color: #333333;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer h2 {
+    color: #ff9900;
+}
+
+.social-media .icon {
+    font-size: 24px;
+    margin-right: 10px;
+    color: #ffffff;
+}
+
+.social-media a {
+    text-decoration: none;
+}
+
+.social-media a:hover {
+    color: #ff9900;
+}
+
+/* Qo'shimcha ma'lumotlar uslubi */
+.additional-info p {
+    font-size: 14px;
+    line-height: 1.6;
+}

@@ -1,0 +1,128 @@
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: hwb(191 75% 15%); 
+  }
+  
+  
+  header.header {
+    background-color: #333;
+    color: #fff; 
+    padding: 25px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+  }
+  
+  .header.sticky { 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+  }
+  
+  .logo {
+    font-size: 3.5em;
+    font-weight: bold;
+    color: #fff; 
+  }
+  
+  nav {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li {
+    margin-right: 20px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #fff; 
+    transition: color 0.3s ease-in-out;
+  }
+  
+  nav a:hover {
+    color: #ddd; 
+  }
+  
+ 
+  .feedback-form {
+    background-color: #fff; 
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 500px;
+    margin: 40px auto; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+  }
+  
+  .feedback-form form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .feedback-form label {
+    display: block;
+    margin-bottom: 2px;
+    font-weight: bold;
+  }
+  
+  .feedback-form input[type="text"],
+  .feedback-form textarea {
+    width: 100%;
+    padding: 12px 15px; 
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin-bottom: 4px;
+    font-size: 16px; 
+  }
+  
+  .feedback-form textarea {
+    height: 80px; 
+  }
+  
+  .feedback-form button[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .feedback-form button[type="submit"]:hover {
+    background-color: #222; 
+  }
+  
+  .feedback-form p {
+    margin: 10px 0;
+    font-style: italic;
+    color: #888; 
+  }
+  
+
+  footer.footer {
+    background-color: #333; 
+    color: #fff; 
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .footer p {
+    margin-bottom: 10px;
+  }
+  
+  .social-media {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  

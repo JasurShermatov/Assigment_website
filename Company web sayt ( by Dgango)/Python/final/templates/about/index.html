@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <title>{{title}}</title>
+    <link rel="icon" type="image/x-icon" href="{% static 'images/logo/logo.ico'%} ">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="{% static 'css/index.css'%}">
+    <link rel="stylesheet" href="{% static 'css/'|add:html_name|add:'.css'%}">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><img class="logo" src="{%static 'images/logo/logo.jpg'%}" alt="Logo"></li>
+            <li><a href="{% url 'news' %}">Company</a></li>
+            <li><a href="{% url 'workers-info' %}">Workers</a></li>
+            <li><a href="{% url 'feedback' %}">Feedback</a></li>
+        </ul>
+    </nav>
+    <main>
+    {% include 'about/'|add:html_name|add:'.html' %}
+    </main>
+    <footer>
+        <h2>About us</h2>
+        <div class="social-media">
+            <a href="https://www.instagram.com/jasur_0528/" target="_blank" class="icon"><i class="fab fa-instagram"></i></a>
+            <a href="https://t.me/Shermatov_J05/" target="_blank" class="icon"><i class="fab fa-telegram"></i></a>
+        </div>
+        <p>2024, uzbekistan, 10000, Tashkent, UZB</p>
+        <p>For general questions, email us at shermatovjasur800@gmail.com</p>
+        <div class="additional-info">
+            <p>Ushbu web site ishchilarni malumotini ko'rsatadi</p>
+            <p>Va albatta komentariya bera olasiz</p>
+        </div>
+    </footer>
+</body>
+</html>
